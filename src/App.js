@@ -1,11 +1,13 @@
 import React from 'react';
 import HeaderNav from './containers/HeaderNav/HeaderNav'
+import { SideBar } from './containers/SideBar/SideBar';
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
 <HeaderNav/>
-    </div>
+<SideBar/>
+    </React.Fragment>
   );
 }
 
