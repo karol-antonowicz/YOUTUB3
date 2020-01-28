@@ -4,9 +4,14 @@ import './SideBarItem.scss'
 
 export const SideBarItem = props => {
 
-    return (
-        <div>
+    const highlight = props.highlight? 'highlight-item' : null;
 
-        </div>
+    return (
+        <Menu.Item className={['side-bar-item', highlight].join(' ')}>
+            <div className='sidebar-item-alignment-container'>
+                <span><Icon size='large' name={props.icon}/></span>
+                <span>{props.label}</span>
+            </div>
+        </Menu.Item>
     )
 }

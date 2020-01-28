@@ -25,7 +25,7 @@ export const HeaderNav = () => {
                         <Icon className='header-icon' name='camera' size='large' />
                     </Menu.Item>
                     <Menu.Item>
-                        <Icon className='header-icon' name='table' size='large' />
+                        <Icon className='header-icon' name='grid layout' size='large' />
                     </Menu.Item>
                     <Menu.Item>
                         <Icon className='header-icon' name='chat' size='large' />
