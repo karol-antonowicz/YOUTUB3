@@ -17,10 +17,8 @@ export const SideBarFooter = props => {
                 <div>Legal</div>
             </div>
             <div className='footer-block'>
-                <div>©Productioncoder.com + Karol Antonowicz</div>
+                <div>Karol Antonowicz + ©Productioncoder.com</div>
             </div>
-
-
         </React.Fragment>
 
     )

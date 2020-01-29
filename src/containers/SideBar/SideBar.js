@@ -4,6 +4,7 @@ import {SideBarHeader} from './SideBarHeader';
 import {Menu, Divider} from 'semantic-ui-react';
 import './SideBar.scss';
 import { Subscriptions } from './Subscriptions/Subscriptions';
+import { SideBarFooter } from './SideBarFooter/SideBarFooter';
 
 export const SideBar = () => {
     return (
@@ -25,6 +26,7 @@ export const SideBar = () => {
             <SideBarItem label='Help' icon='help'/>
             <SideBarItem label='Send feedback' icon='chat outline'/>
             <Divider/>
+            <SideBarFooter/>
         </Menu>
     )
 }
