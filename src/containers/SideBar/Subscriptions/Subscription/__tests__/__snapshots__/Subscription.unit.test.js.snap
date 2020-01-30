@@ -1,6 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Subscription 1`] = `
+exports[`Subscription renders Subscription broadcasting, and no label no new videos 1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span />
+    </div>
+    <Icon
+      as="i"
+      name="bullseye"
+    />
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription renders Subscription broadcasting, and no new videos 1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span>
+        sample
+      </span>
+    </div>
+    <Icon
+      as="i"
+      name="bullseye"
+    />
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription renders Subscription broadcasting, and some new videos 1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span>
+        sample
+      </span>
+    </div>
+    <Icon
+      as="i"
+      name="bullseye"
+    />
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription renders Subscription not broadcasting, and some new videos 1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span>
+        sampledupa
+      </span>
+    </div>
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription renders Subscription with props=null 1`] = `
 <MenuItem>
   <div
     className="subscription"

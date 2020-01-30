@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders SideBarHeader 1`] = `
+exports[`SideBarHeader renders SideBarHeader with props.title=''  1`] = `
+<MenuItem>
+  <MenuHeader
+    className="side-bar-header"
+  />
+</MenuItem>
+`;
+
+exports[`SideBarHeader renders SideBarHeader with props.title='dupa'  1`] = `
+<MenuItem>
+  <MenuHeader
+    className="side-bar-header"
+  >
+    DUPA
+  </MenuHeader>
+</MenuItem>
+`;
+
+exports[`SideBarHeader renders SideBarHeader with props.title=null 1`] = `
 <MenuItem>
   <MenuHeader
     className="side-bar-header"
