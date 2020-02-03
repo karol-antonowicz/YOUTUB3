@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoGrid render VideoGrid with no title props and hideDivider 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+</Fragment>
+`;
+
+exports[`VideoGrid renders VideoGrid without props 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
+
+exports[`VideoGrid renders with props title empty string 1`] = `
+<Fragment>
+  <VideoGridHeader
+    title=""
+  />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
+
+exports[`VideoGrid renders with title and hideDivider props set to false 1`] = `
+<Fragment>
+  <VideoGridHeader
+    title="Black & White"
+  />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
+
+exports[`VideoGrid renders with title and hideDivider props set to true 1`] = `
+<Fragment>
+  <VideoGridHeader
+    title="Black & White"
+  />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+</Fragment>
+`;
