@@ -1,8 +1,9 @@
 import React from 'react';
 import './Watch.scss';
+import {Video} from '../../components/Video/Video'
 
 export const Watch = props => {
     return (
-        <div>Watch comp here</div>
+        <Video id='0beu6BodTYs'/>
     )
 }
