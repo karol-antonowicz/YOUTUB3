@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating renders Rating with dislikeCount 1`] = `
+<div
+  className="rating"
+>
+  <div
+    className="thumbs-up"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline up"
+    />
+    <span />
+  </div>
+  <div
+    className="thumbs-down"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline down"
+    />
+    <span>
+      20
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Rating renders Rating with likeCount 1`] = `
+<div
+  className="rating"
+>
+  <div
+    className="thumbs-up"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline up"
+    />
+    <span>
+      20
+    </span>
+  </div>
+  <div
+    className="thumbs-down"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline down"
+    />
+    <span />
+  </div>
+</div>
+`;
+
+exports[`Rating renders Rating with likeCount and dislikeCount 1`] = `
+<div
+  className="rating"
+>
+  <div
+    className="thumbs-up"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline up"
+    />
+    <span>
+      1
+    </span>
+  </div>
+  <div
+    className="thumbs-down"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline down"
+    />
+    <span>
+      20
+    </span>
+  </div>
+  <Progress
+    className="progress"
+    percent={4.761904761904762}
+    size="tiny"
+  />
+</div>
+`;
+
+exports[`Rating renders Rating without props 1`] = `
+<div
+  className="rating"
+>
+  <div
+    className="thumbs-up"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline up"
+    />
+    <span />
+  </div>
+  <div
+    className="thumbs-down"
+  >
+    <Icon
+      as="i"
+      name="thumbs outline down"
+    />
+    <span />
+  </div>
+</div>
+`;

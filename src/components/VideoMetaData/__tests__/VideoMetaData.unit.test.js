@@ -1,5 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+import {VideoMetaData} from '../VideoMetaData'
 
 describe('VideoMetaData', ()=> {
     test('renders VideoMetaData with no viewCount', ()=> {

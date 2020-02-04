@@ -11,7 +11,7 @@
         grid-row: 1 / 2;
     }   
 
-    .metadata {
+    .video-metadata {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
 
@@ -27,6 +27,7 @@
     }
 
     .relatedVideos {
+        background-color: yellow;;
         grid-column: 2 / 3;
         grid-row: 1 / span 4;
     }
