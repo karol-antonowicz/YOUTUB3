@@ -1,8 +1,24 @@
-import React from 'react';
-import './VideoInfoBox';
+import React, { useState } from 'react';
+import './VideoInfoBox.scss';
 import {Image, Button} from 'semantic-ui-react'
 
 export const VideoInfoBox = () => {
+
+    const [collapsed, setCollapsed] = useState(true);
+    
+    const onToggleCollapseButtonClick = () => {
+        setCollapsed(!collapsed)
+    }
+
+    let descriptionTextClass = 'collapsed';
+    let buttonTitle = 'Show More';
+
+    if (!collapsed) {
+
+        descriptionTextClass = 'expanded';
+        buttonTitle = 'Show Less'
+    }
+
     return (
         <div className='video-info-box'>
             <Image className='channel-image' src='http://via.placeholder.com/48x48' circular/>
@@ -12,12 +28,14 @@ export const VideoInfoBox = () => {
             </div>
             <Button color='youtube'>91.5K Subscribe</Button>
             <div className='video-description'>
+                <div className={descriptionTextClass}>
                 <p>Paragraph 1</p>
                 <p>Paragraph 2</p>
                 <p>Paragraph 3</p>
                 <p>Paragraph 4</p>
                 <p>Paragraph 5</p>
-                <Button compact>Show More</Button>
+                </div>
+                <Button onClick={onToggleCollapseButtonClick} compact>{buttonTitle}</Button>
             </div>
         </div>
     )
