@@ -35,7 +35,7 @@ export const VideoInfoBox = () => {
                 <p>Paragraph 4</p>
                 <p>Paragraph 5</p>
                 </div>
-                <Button onClick={onToggleCollapseButtonClick} compact>{buttonTitle}</Button>
+                <Button className='more' onClick={onToggleCollapseButtonClick} compact>{buttonTitle}</Button>
             </div>
         </div>
     )
