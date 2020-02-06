@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments Comments renders with no props 1`] = `
+<div
+  className="comments"
+>
+  <CommentsHeader />
+  <AddComment />
+  <Comment />
+  <Comment />
+  <Comment />
+  <Comment />
+  <Comment />
+</div>
+`;
+
+exports[`Comments Comments renders with props amountComments 1`] = `
+<div
+  className="comments"
+>
+  <CommentsHeader
+    amountComments={245454}
+  />
+  <AddComment />
+  <Comment />
+  <Comment />
+  <Comment />
+  <Comment />
+  <Comment />
+</div>
+`;
