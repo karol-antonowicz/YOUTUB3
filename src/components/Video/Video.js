@@ -15,13 +15,13 @@ export const Video = props => {
                 <iframe 
                 className='video-player'
                 src={embedUrl}
-                frameborder="0" 
+                frameBorder="0" 
                 allow="accelerometer; 
                 autoplay; 
                 encrypted-media; 
                 gyroscope; 
                 picture-in-picture" 
-                allowfullscreen
+                allowFullScreen
                 title='video'>
                 </iframe>
             </div>

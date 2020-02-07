@@ -1,14 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Home } from './components/Home/Home';
 import { AppLayout } from './components/AppLayout/AppLayout';
 import { Watch } from './containers/Watch/Watch';
 import { Route, Switch } from 'react-router-dom'
 import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {youtubeLibraryLoaded} from '../src/store/actions/api';
+
 
 const API_KEY = `${process.env.REACT_APP_API_KEY}`
-console.log(API_KEY)
 
-const App = () => {
+export const App = () => {
+
+useEffect(()=> {
+  loadYoutubeApi();
+})
+
+const loadYoutubeApi = () => {
+  const script = document.createElement("script");
+  script.src = "https://apis.google.com/js/client.js";
+  console.log('loadYoutubeApi func')
+
+  script.onload = () => {
+    window.gapi.load('client', () => {
+      window.gapi.client.setApiKey(API_KEY);
+      window.gapi.client.load('youtube', 'v3', () => {
+        this.props.youtubeLibraryLoaded();
+      });
+    });
+  };
+
+  document.body.appendChild(script);
+}
   return (
     <AppLayout>
       <Switch>
@@ -19,4 +42,8 @@ const App = () => {
   );
 }
 
-export default App;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({youtubeLibraryLoaded}, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(App)
