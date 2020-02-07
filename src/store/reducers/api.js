@@ -1,7 +1,7 @@
 import {YOUTUBE_LIBRARY_LOADED}from '../actions/api';
 
 const initialState = {
-    libraryLoaded: false;
+    libraryLoaded: false
 }
 
 export default function(state=initialState, action) {
