@@ -24,7 +24,7 @@ export const SideBar = () => {
             <Divider/>
             <SideBarItem label='Settings' icon='setting'/>
             <SideBarItem label='Help' icon='help'/>
-            <SideBarItem label='Send feedback' icon='chat outline'/>
+            <SideBarItem label='Send feedback' icon='chat'/>
             <Divider/>
             <SideBarFooter/>
         </Menu>
